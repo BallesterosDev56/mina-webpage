@@ -42,8 +42,8 @@ function Cake() {
         lowFrequencyValues.reduce((sum, value) => sum + value, 0) /
         lowFrequencyValues.length;
 
-      const blowThreshold = 100; // Moderate threshold
-      const requiredDuration = 1500; // 1. 5 sec blow required
+      const blowThreshold = 50; // Moderate threshold
+      const requiredDuration = 300; // 1. 5 sec blow required
 
       if (averageLowFrequency > blowThreshold) {
         if (!blowStartTime) {
